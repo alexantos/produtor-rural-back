@@ -4,4 +4,4 @@ from django.db import models
 
 
 class Safra(ModelBase):
-    data_ano = models.PositiveIntegerField()
+    ano = models.PositiveIntegerField()
