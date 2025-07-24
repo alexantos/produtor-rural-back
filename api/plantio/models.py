@@ -11,4 +11,7 @@ class Plantio(ModelBase):
     cultura = models.ForeignKey(to=Cultura, on_delete=models.PROTECT)
     safra = models.ForeignKey(to=Safra, on_delete=models.PROTECT)
     propriedade = models.ForeignKey(to=Propriedade, on_delete=models.PROTECT)
-    observacoes = models.TextField()
+    observacoes = models.TextField(null=True, blank=True)
+
+    def __str__(self):
+        return str(self.id)
