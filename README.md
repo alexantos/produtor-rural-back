@@ -161,3 +161,5 @@ Por fim podemos rodar localmente o projeto com:
 python manage.py runserver
 ```
 
+Link do frontend: <br>
+https://github.com/alexantos/produtor-rural-front
