@@ -19,11 +19,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'drf_spectacular',
-    'django_filters',
-    'corsheaders',
     'api',
+    'rest_framework',
+    'corsheaders',
+    'django_filters',
+    'drf_spectacular',
 ]
 
 SPECTACULAR_SETTINGS = {

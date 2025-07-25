@@ -7,5 +7,5 @@ class ProdutorFilter(django_filters.FilterSet):
     class Meta:
         model = Produtor
         fields = {
-            'nome': ['iexact'],
+            'nome': ['contains',],
         }
