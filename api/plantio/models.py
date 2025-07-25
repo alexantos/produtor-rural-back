@@ -8,9 +8,9 @@ from api.safra.models import Safra
 
 
 class Plantio(ModelBase):
-    cultura = models.ForeignKey(to=Cultura, on_delete=models.PROTECT)
-    safra = models.ForeignKey(to=Safra, on_delete=models.PROTECT)
-    propriedade = models.ForeignKey(to=Propriedade, on_delete=models.PROTECT)
+    cultura = models.ForeignKey(to=Cultura, on_delete=models.CASCADE)
+    safra = models.ForeignKey(to=Safra, on_delete=models.CASCADE)
+    propriedade = models.ForeignKey(to=Propriedade, on_delete=models.CASCADE)
     observacoes = models.TextField(null=True, blank=True)
 
     def __str__(self):

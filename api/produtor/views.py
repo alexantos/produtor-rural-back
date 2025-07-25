@@ -7,7 +7,7 @@ from api.produtor.serializers import ProdutorSerializer
 
 
 class ProdutorView(viewsets.ModelViewSet):
-    queryset = Produtor.objects.all()
+    queryset = Produtor.objects.filter().order_by('-atualizacao')
     serializer_class = ProdutorSerializer
     # permission_classes = [permissions.IsAuthenticated]
     permission_classes = []
